@@ -24,6 +24,8 @@ Now, let's get started on enabling classic pipelines in both your organization a
 
 6. **Save Changes**: Don't forget to save your changes after enabling classic pipelines. Your settings will be applied. 💾
 
+![img](./img/classic_pipeliens.png)
+
 **For Project Settings:**
 
 1. **Sign In**: Start by logging in to your Azure DevOps account using your credentials. 💼
