@@ -1,0 +1,14 @@
+image: node:14
+
+pipelines:
+  default:
+    - step:
+        name: Sync GitHub to Bitbucket
+        script:
+          - apt-get update && apt-get install -y git
+          - git config --global user.email "saitejairrinki91@gmail.com"
+          - git config --global user.name "Saiteja Irrinki"
+          - git clone https://github.com/saitejairrinki/azuredevops.git
+          - cd azuredevops
+          - git remote add bitbucket https://saitejadevops:ATBBssC4cC2fzpevKLRhHQG4XjWw449B6F4C@bitbucket.org/githubcopy/azuredevops.git
+          - git push -f bitbucket main
